@@ -17,7 +17,7 @@ public class SupplyChain {
 	}
 	
 
-	public void findElement (String element) {
+	public void clickElement (String element) {
 		driver.findElement(By.xpath(element)).click();
 	}
 	

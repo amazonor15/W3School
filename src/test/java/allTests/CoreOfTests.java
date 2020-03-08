@@ -17,7 +17,7 @@ public class CoreOfTests {
     
     
     
-    private CoreOfTests() {
+    private CoreOfTests() { 
 		
 	}
     
@@ -26,11 +26,11 @@ public class CoreOfTests {
     public WebDriver getDriver(String driverValue) {
 		if (driver==null) {
 			if (driverValue.contains("chrome")) {
-				System.setProperty("webdriver.chrome.driver", "/Users/shahid2/Desktop/bootCamp1/pnt2-mct-autoproject/chromedriver");
+				System.setProperty("webdriver.chrome.driver", "/Users/shahid2/eclipse-workspace/W3School/Browsers/chromedriver");
 				driver = new ChromeDriver();
 				
 			} else if (driverValue.contains("firefox")) {
-				System.setProperty("webdriver.gecko.driver", "/Users/shahid2/Desktop/bootCamp1/pnt2-mct-autoproject/geckodriver");
+				System.setProperty("webdriver.gecko.driver", "/Users/shahid2/eclipse-workspace/W3School/Browsers/geckodriver");
 				driver = new FirefoxDriver();
 				
 			}

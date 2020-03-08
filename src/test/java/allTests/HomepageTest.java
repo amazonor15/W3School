@@ -14,7 +14,7 @@ public class HomepageTest {
 	CoreOfTests instance = CoreOfTests.getInstance();
 	@Test
 	public void validateTitle3() {
-		instance.getDriver("chrome");
+		instance.getDriver("firefox");
 		instance.getHomePage().URL();
 		String title= instance.getHomePage().getTitle();
 		System.out.println(title);
@@ -22,6 +22,21 @@ public class HomepageTest {
 		AssertJUnit.assertEquals(title, "W3Schools Online Web Tutorials");
 	}
 	
+	
+	
+	@Test
+	public void HomereferenceValidation() {
+		
+		instance.getDriver("chrome");
+		instance.getHomePage().URL();
+		instance.getHomePage().GetHomeReferance();
+		
+		String reftext= instance.getHomePage().clickTextResult();
+		System.out.println(reftext);
+		
+		Assert.assertEquals(reftext, "REFERENCES");
+		
+	}
 	
 	
 	@AfterClass
